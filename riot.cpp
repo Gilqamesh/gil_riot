@@ -43,7 +43,7 @@ riot_api::riot_api(const std::string& api_key):
     m_api_key(api_key) {
 }
 
-void riot_api::set_api_key(const std::string& api_key) {
+void riot_api::init(const std::string& api_key) {
     m_api_key = api_key;
 }
 

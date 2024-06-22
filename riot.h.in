@@ -13,7 +13,7 @@ struct riot_api {
     riot_api() = default;
     riot_api(const std::string& api_key);
 
-    void set_api_key(const std::string& api_key);
+    void init(const std::string& api_key);
 
     std::string m_api_key;
 
