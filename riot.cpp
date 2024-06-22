@@ -43,6 +43,10 @@ riot_api::riot_api(const std::string& api_key):
     m_api_key(api_key) {
 }
 
+void riot_api::set_api_key(const std::string& api_key) {
+    m_api_key = api_key;
+}
+
 riot_api::region_t riot_api::str_to_region(const std::string& region) {
     if (region == "NA")   return riot_api::REGION_NA;
     if (region == "LAN")  return riot_api::REGION_LAN;
